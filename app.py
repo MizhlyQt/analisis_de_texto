@@ -3,6 +3,8 @@ import pandas as pd
 from textblob import TextBlob
 import re
 from googletrans import Translator
+from streamlit_lottie import st_lottie
+import json
 
 # Configuración de la página
 st.set_page_config(
