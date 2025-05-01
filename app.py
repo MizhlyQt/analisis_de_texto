@@ -171,7 +171,7 @@ def crear_visualizaciones(resultados):
         st.subheader("Palabras más frecuentes")
         if resultados["contador_palabras"]:
             top_words = dict(list(resultados["contador_palabras"].items())[:10])
-            st.bar_chart(top_words)
+            st.bar_chart(top_words, color='#7feb6c'))
 
     st.subheader("Texto Traducido")
     with st.expander("Ver traducción completa"):
