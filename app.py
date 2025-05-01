@@ -12,6 +12,20 @@ st.set_page_config(
     page_icon="📊",
     layout="wide"
 )
+page_bg_img = """
+<style>
+[data-testid="stAppViewContainer"] {
+    background-image: url(https://img.freepik.com/premium-vector/seamless-abstract-pattern_975374-10175.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+</style>
+"""
+
+# Aplicarlo
+st.markdown(page_bg_img, unsafe_allow_html=True)
+
 
 # Título y descripción
 st.title("📝 Analizador de Texto con TextBlob")
