@@ -198,12 +198,18 @@ def crear_visualizaciones(resultados):
                 blob_frase = TextBlob(frase_traducida)
                 sentimiento = blob_frase.sentiment.polarity
                 
-                if sentimiento > 0.05:
-                    emoji = "😊"
-                elif sentimiento < -0.05:
-                    emoji = "😟"
-                else:
-                    emoji = "😐"
+                if polarity >= 0.5:
+            st.success('¡Sentimiento Positivo! 😊')
+            animation = load_lottiefile('positivo.json')
+            st_lottie(animation, height=300)
+        elif polarity <= -0.5:
+            st.error('Sentimiento Negativo 😔')
+            animation = load_lottiefile('negativo.json')
+            st_lottie(animation, height=300)
+        else:
+            st.warning('Sentimiento Neutral 😐')
+            animation = load_lottiefile('neutral.json')
+            st_lottie(animation, height=300)
                 
                 st.write(f"{i}. {emoji} **Original:** *\"{frase_original}\"*")
                 st.write(f"   **Traducción:** *\"{frase_traducida}\"* (Sentimiento: {sentimiento:.2f})")
