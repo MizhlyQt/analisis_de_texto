@@ -42,6 +42,7 @@ Esta aplicación utiliza TextBlob para realizar un análisis básico de texto:
 - Análisis de sentimiento y subjetividad
 - Extracción de palabras clave
 - Análisis de frecuencia de palabras
+- Baja hasta el final para una sorpresa despues de analizar
 """)
 
 # Barra lateral
