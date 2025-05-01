@@ -146,6 +146,8 @@ def crear_visualizaciones(resultados):
             if anim: st_lottie(anim, height=200)
         else:
             st.info("😐 Sentimiento Neutral")
+            anim = load_lottiefile("neutral.json")
+            if anim: st_lottie(anim, height=200)
 
 # Entrada de texto o archivo
 if modo == "Texto directo":
