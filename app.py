@@ -15,10 +15,18 @@ st.set_page_config(
 page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] {
-    background-image: url(https://img.freepik.com/premium-vector/seamless-abstract-pattern_975374-10175.jpg);
+    background-image: url(https://static.vecteezy.com/system/resources/previews/006/688/262/non_2x/triangle-geometric-black-3d-background-dark-mosaic-geometry-pattern-polygon-shape-pattern-backdrop-triangular-creative-template-abstract-modern-wallpaper-design-illustration-vector.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+/* Fondo del sidebar */
+[data-testid="stSidebar"] {
+    background-color: #050d2b;
+}
+/* Color de todos los textos */
+[data-testid="stMarkdownContainer"] {
+    color: #ffffff;
 }
 </style>
 """
